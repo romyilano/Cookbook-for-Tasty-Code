@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CD0F8EC184BCD720081BEC2 /* Projekt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projekt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD0F8EC184BCD720081BEC2 /* CookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD0F8EF184BCD720081BEC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1CD0F8F1184BCD720081BEC2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1CD0F8F3184BCD720081BEC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -49,9 +49,9 @@
 		1CD0F904184BCD720081BEC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "GCD - UI-Related Tasks/ViewController.h"; sourceTree = "<group>"; };
 		1CD0F905184BCD720081BEC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "GCD - UI-Related Tasks/ViewController.m"; sourceTree = "<group>"; };
 		1CD0F907184BCD720081BEC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "GCD - UI-Related Tasks/Images.xcassets"; sourceTree = "<group>"; };
-		1CD0F90D184BCD720081BEC2 /* ProjektTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjektTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD0F90D184BCD720081BEC2 /* CookBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD0F90E184BCD720081BEC2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		1CD0F916184BCD720081BEC2 /* ProjektTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProjektTests-Info.plist"; sourceTree = "<group>"; };
+		1CD0F916184BCD720081BEC2 /* CookBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CookBookTests-Info.plist"; sourceTree = "<group>"; };
 		1CD0F918184BCD720081BEC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1CD0F91A184BCD720081BEC2 /* GCD___UI_Related_TasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GCD___UI_Related_TasksTests.m"; sourceTree = "<group>"; };
 		1CD0F924184BCE0A0081BEC2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 		1CD0F8ED184BCD720081BEC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1CD0F8EC184BCD720081BEC2 /* Projekt.app */,
-				1CD0F90D184BCD720081BEC2 /* ProjektTests.xctest */,
+				1CD0F8EC184BCD720081BEC2 /* CookBook.app */,
+				1CD0F90D184BCD720081BEC2 /* CookBookTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 		1CD0F915184BCD720081BEC2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1CD0F916184BCD720081BEC2 /* ProjektTests-Info.plist */,
+				1CD0F916184BCD720081BEC2 /* CookBookTests-Info.plist */,
 				1CD0F917184BCD720081BEC2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -162,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1CD0F8EB184BCD720081BEC2 /* Projekt */ = {
+		1CD0F8EB184BCD720081BEC2 /* CookBook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1CD0F91E184BCD720081BEC2 /* Build configuration list for PBXNativeTarget "Projekt" */;
+			buildConfigurationList = 1CD0F91E184BCD720081BEC2 /* Build configuration list for PBXNativeTarget "CookBook" */;
 			buildPhases = (
 				1CD0F8E8184BCD720081BEC2 /* Sources */,
 				1CD0F8E9184BCD720081BEC2 /* Frameworks */,
@@ -174,14 +174,14 @@
 			);
 			dependencies = (
 			);
-			name = Projekt;
+			name = CookBook;
 			productName = "GCD - UI-Related Tasks";
-			productReference = 1CD0F8EC184BCD720081BEC2 /* Projekt.app */;
+			productReference = 1CD0F8EC184BCD720081BEC2 /* CookBook.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1CD0F90C184BCD720081BEC2 /* ProjektTests */ = {
+		1CD0F90C184BCD720081BEC2 /* CookBookTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1CD0F921184BCD720081BEC2 /* Build configuration list for PBXNativeTarget "ProjektTests" */;
+			buildConfigurationList = 1CD0F921184BCD720081BEC2 /* Build configuration list for PBXNativeTarget "CookBookTests" */;
 			buildPhases = (
 				1CD0F909184BCD720081BEC2 /* Sources */,
 				1CD0F90A184BCD720081BEC2 /* Frameworks */,
@@ -192,9 +192,9 @@
 			dependencies = (
 				1CD0F913184BCD720081BEC2 /* PBXTargetDependency */,
 			);
-			name = ProjektTests;
+			name = CookBookTests;
 			productName = "GCD - UI-Related TasksTests";
-			productReference = 1CD0F90D184BCD720081BEC2 /* ProjektTests.xctest */;
+			productReference = 1CD0F90D184BCD720081BEC2 /* CookBookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1CD0F8E7184BCD720081BEC2 /* Build configuration list for PBXProject "Projekt" */;
+			buildConfigurationList = 1CD0F8E7184BCD720081BEC2 /* Build configuration list for PBXProject "CookBook" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -224,8 +224,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1CD0F8EB184BCD720081BEC2 /* Projekt */,
-				1CD0F90C184BCD720081BEC2 /* ProjektTests */,
+				1CD0F8EB184BCD720081BEC2 /* CookBook */,
+				1CD0F90C184BCD720081BEC2 /* CookBookTests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,7 +276,7 @@
 /* Begin PBXTargetDependency section */
 		1CD0F913184BCD720081BEC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1CD0F8EB184BCD720081BEC2 /* Projekt */;
+			target = 1CD0F8EB184BCD720081BEC2 /* CookBook */;
 			targetProxy = 1CD0F912184BCD720081BEC2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -388,9 +388,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GCD - UI-Related Tasks/Projekt-Prefix.pch";
+				GCC_PREFIX_HEADER = "GCD - UI-Related Tasks/CookBook-Prefix.pch";
 				INFOPLIST_FILE = "GCD - UI-Related Tasks/Projekt-Info.plist";
-				PRODUCT_NAME = Projekt;
+				PRODUCT_NAME = CookBook;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -401,9 +401,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GCD - UI-Related Tasks/Projekt-Prefix.pch";
+				GCC_PREFIX_HEADER = "GCD - UI-Related Tasks/CookBook-Prefix.pch";
 				INFOPLIST_FILE = "GCD - UI-Related Tasks/Projekt-Info.plist";
-				PRODUCT_NAME = Projekt;
+				PRODUCT_NAME = CookBook;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -424,8 +424,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "GCD - UI-Related TasksTests/ProjektTests-Info.plist";
-				PRODUCT_NAME = ProjektTests;
+				INFOPLIST_FILE = "GCD - UI-Related TasksTests/CookBookTests-Info.plist";
+				PRODUCT_NAME = CookBookTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -443,8 +443,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GCD - UI-Related Tasks/GCD - UI-Related Tasks-Prefix.pch";
-				INFOPLIST_FILE = "GCD - UI-Related TasksTests/ProjektTests-Info.plist";
-				PRODUCT_NAME = ProjektTests;
+				INFOPLIST_FILE = "GCD - UI-Related TasksTests/CookBookTests-Info.plist";
+				PRODUCT_NAME = CookBookTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -453,7 +453,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1CD0F8E7184BCD720081BEC2 /* Build configuration list for PBXProject "Projekt" */ = {
+		1CD0F8E7184BCD720081BEC2 /* Build configuration list for PBXProject "CookBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1CD0F91C184BCD720081BEC2 /* Debug */,
@@ -462,7 +462,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1CD0F91E184BCD720081BEC2 /* Build configuration list for PBXNativeTarget "Projekt" */ = {
+		1CD0F91E184BCD720081BEC2 /* Build configuration list for PBXNativeTarget "CookBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1CD0F91F184BCD720081BEC2 /* Debug */,
@@ -471,7 +471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1CD0F921184BCD720081BEC2 /* Build configuration list for PBXNativeTarget "ProjektTests" */ = {
+		1CD0F921184BCD720081BEC2 /* Build configuration list for PBXNativeTarget "CookBookTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1CD0F922184BCD720081BEC2 /* Debug */,

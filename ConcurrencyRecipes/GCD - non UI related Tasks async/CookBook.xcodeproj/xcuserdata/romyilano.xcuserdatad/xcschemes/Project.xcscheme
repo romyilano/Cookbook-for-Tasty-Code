@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1CD0F8EB184BCD720081BEC2"
                BuildableName = "Projekt.app"
-               BlueprintName = "Projekt"
-               ReferencedContainer = "container:Projekt.xcodeproj">
+               BlueprintName = "CookBook"
+               ReferencedContainer = "container:CookBook.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1CD0F90C184BCD720081BEC2"
                BuildableName = "ProjektTests.xctest"
-               BlueprintName = "ProjektTests"
-               ReferencedContainer = "container:Projekt.xcodeproj">
+               BlueprintName = "CookBookTests"
+               ReferencedContainer = "container:CookBook.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1CD0F8EB184BCD720081BEC2"
             BuildableName = "Projekt.app"
-            BlueprintName = "Projekt"
-            ReferencedContainer = "container:Projekt.xcodeproj">
+            BlueprintName = "CookBook"
+            ReferencedContainer = "container:CookBook.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1CD0F8EB184BCD720081BEC2"
             BuildableName = "Projekt.app"
-            BlueprintName = "Projekt"
-            ReferencedContainer = "container:Projekt.xcodeproj">
+            BlueprintName = "CookBook"
+            ReferencedContainer = "container:CookBook.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1CD0F8EB184BCD720081BEC2"
             BuildableName = "Projekt.app"
-            BlueprintName = "Projekt"
-            ReferencedContainer = "container:Projekt.xcodeproj">
+            BlueprintName = "CookBook"
+            ReferencedContainer = "container:CookBook.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
