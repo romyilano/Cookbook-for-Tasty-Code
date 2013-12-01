@@ -13,6 +13,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    static dispatch_once_t onceToken;
+    
+    void (^executedOnlyOnce)(void) = ^{
+        
+        static NSUInteger numberOfEntries = 0;
+        numberOfEntries ++;
+        NSLog(@"Executed %lu time(s)", (unsigned long)numberOfEntries);
+        
+    };
+    
+    dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
     return YES;
 }
 							
@@ -41,6 +54,20 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark -singleton sample
+-(void)singletonSampleUsingGCD
+{
+    static dispatch_once_t onceToken;
+    
+    void (^executedOnlyOnce)(void) = ^{
+        
+        static NSUInteger numberOfEntries = 0;
+        numberOfEntries ++;
+        NSLog(@"Executed %lu time(s)", (unsigned long)numberOfEntries);
+        
+    };
 }
 
 @end
