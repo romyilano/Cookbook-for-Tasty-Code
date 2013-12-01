@@ -55,7 +55,6 @@
 		1CD0F918184BCD720081BEC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1CD0F91A184BCD720081BEC2 /* GCD___UI_Related_TasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GCD___UI_Related_TasksTests.m"; sourceTree = "<group>"; };
 		1CD0F924184BCE0A0081BEC2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		1CD0F927184BD0750081BEC2 /* Bookmarks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bookmarks.h; path = ../../Bookmarks.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +84,6 @@
 		1CD0F8E3184BCD720081BEC2 = {
 			isa = PBXGroup;
 			children = (
-				1CD0F927184BD0750081BEC2 /* Bookmarks.h */,
 				1CD0F924184BCE0A0081BEC2 /* README.md */,
 				1CD0F926184BCFC70081BEC2 /* Files */,
 				1CD0F914184BCD720081BEC2 /* Tests */,

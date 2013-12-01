@@ -1,11 +1,11 @@
-# Peforming UI-Related Tasks with GCD
+# Executing Non - UI Related tasks sync with GCD
 
-Use dispatch_get_main_queue with UI_related tasks on GCD
+Synchronous tasks not involving UI-related code:
 
-## Notes 
+Vandipoor recommends the dispatch_sync function. 
+These call on the global concurrent queues in GCD. These run on threads other than
+the main thread.
 
-* Just like with threading's main thread, GCD has a main queue.
-* All UI tasks should be executed on the main thread
-* Dispatching tasks to the main queue (when you're not currently on the main queue) is done asynchronously. You have to submit all tasks to the main queue through GCD aysnchronously (Vandipoor)
-
+examples:
+* Downloading an image and display it to user after download. The downloading process has nothing to do with the UI.
 

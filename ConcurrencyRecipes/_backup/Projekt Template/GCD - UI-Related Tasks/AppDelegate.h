@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AppDelegate.h
 //  GCD - UI-Related Tasks
 //
 //  Created by Romy Ilano on 12/1/13.
@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-
-// sample block object
-@property (nonatomic, copy) void (^simpleCountingBlock)(void);
+@property (strong, nonatomic) UIWindow *window;
 
 @end

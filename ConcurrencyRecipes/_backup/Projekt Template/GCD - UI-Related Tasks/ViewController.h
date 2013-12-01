@@ -10,8 +10,4 @@
 
 @interface ViewController : UIViewController
 
-
-// sample block object
-@property (nonatomic, copy) void (^simpleCountingBlock)(void);
-
 @end
