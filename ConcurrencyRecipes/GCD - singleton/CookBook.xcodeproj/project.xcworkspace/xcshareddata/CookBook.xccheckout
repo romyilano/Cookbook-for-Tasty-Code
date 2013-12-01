@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BC17599A-C2A3-4AAD-851E-D7C37DE9912D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CookBook</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F4D97026-56D5-4618-807D-9BEC2BDE7D13</key>
+		<string>ssh://github.com/romyilano/Cookbook-for-Tasty-Code.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ConcurrencyRecipes/GCD - singleton/CookBook.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F4D97026-56D5-4618-807D-9BEC2BDE7D13</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/romyilano/Cookbook-for-Tasty-Code.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F4D97026-56D5-4618-807D-9BEC2BDE7D13</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F4D97026-56D5-4618-807D-9BEC2BDE7D13</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cookbook</string>
+		</dict>
+	</array>
+</dict>
+</plist>
