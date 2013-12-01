@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1CD0F8EB184BCD720081BEC2"
-               BuildableName = "GCD - UI-Related Tasks.app"
+               BuildableName = "Projekt.app"
                BlueprintName = "Projekt"
                ReferencedContainer = "container:Projekt.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1CD0F90C184BCD720081BEC2"
-               BuildableName = "GCD - UI-Related TasksTests.xctest"
+               BuildableName = "ProjektTests.xctest"
                BlueprintName = "ProjektTests"
                ReferencedContainer = "container:Projekt.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1CD0F8EB184BCD720081BEC2"
-            BuildableName = "GCD - UI-Related Tasks.app"
+            BuildableName = "Projekt.app"
             BlueprintName = "Projekt"
             ReferencedContainer = "container:Projekt.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1CD0F8EB184BCD720081BEC2"
-            BuildableName = "GCD - UI-Related Tasks.app"
+            BuildableName = "Projekt.app"
             BlueprintName = "Projekt"
             ReferencedContainer = "container:Projekt.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1CD0F8EB184BCD720081BEC2"
-            BuildableName = "GCD - UI-Related Tasks.app"
+            BuildableName = "Projekt.app"
             BlueprintName = "Projekt"
             ReferencedContainer = "container:Projekt.xcodeproj">
          </BuildableReference>

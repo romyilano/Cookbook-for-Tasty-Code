@@ -7,7 +7,7 @@ on the main, serial, or concurrent queues."
 
 Tools: dispatch_async or (for c-related functions) dispatch_async_f
 
-# Example
+# Example 1
 
 Download an image from a URL on the Noisebridge page.
 After the download's finished, the app should
@@ -20,17 +20,26 @@ Vandipoor's outline:
 
 ## Set up:
 
-dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+            dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 
-dispatch_async(concurrentQueue, ^{
+            dispatch_async(concurrentQueue, ^{
 
-    __block UIImage *image = nil;
-    
-    dispatch_sync(concurrentQueue, ^{
-        // download image here
-    });
-    
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        // show image to th euser here on the main here
-    });
-)};
+                __block UIImage *image = nil;
+                
+                dispatch_sync(concurrentQueue, ^{
+                    // download image here
+                });
+                
+                dispatch_sync(dispatch_get_main_queue(), ^{
+                    // show image to th euser here on the main here
+                });
+            )};
+
+# Example 2 - Array and file storing
+
+Take an array of 10,000 random numbers stored in a file on disk,
+then load this array into memory, sort the numbers in an ascending fashion (with smallest
+number appearing first in the list) and display the list to user.
+
+
+
