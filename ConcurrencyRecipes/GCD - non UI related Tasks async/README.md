@@ -18,3 +18,19 @@ Vandipoor's outline:
 # In this block, launch another block obj synchronously using dispatch_sync function to download the image from a URL. This makes the rest of the code in the concurrent queue to wait. Since i'm in a synchronous thread and not on the main thread, i'm not blocking the main thread
 # After the image is downloaded, we will synchronously execute a block object on the main queue to dispaly the image to the user
 
+## Set up:
+
+dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+
+dispatch_async(concurrentQueue, ^{
+
+    __block UIImage *image = nil;
+    
+    dispatch_sync(concurrentQueue, ^{
+        // download image here
+    });
+    
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        // show image to th euser here on the main here
+    });
+)};
