@@ -18,6 +18,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // grab a main queue
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    
+    dispatch_async(mainQueue, ^{
+        
+        // do main thread stuff here
+        // do UI work here
+        [[[UIAlertView alloc] initWithTitle:@"Noisebridge"
+                                    message:@"Noisebridge is excellent!"
+                                   delegate:nil
+                          cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+    });
 }
 
 - (void)didReceiveMemoryWarning
