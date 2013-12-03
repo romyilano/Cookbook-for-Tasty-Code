@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B626255B15B8CB7200136BA8 /* PPRSelectIngredientTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B626255A15B8CB7100136BA8 /* PPRSelectIngredientTypeViewController.m */; };
+		B631D23F1599623400A4D3EC /* PPRImportOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B631D23E1599623400A4D3EC /* PPRImportOperation.m */; };
+		B686912315B8D88700D54CEC /* PPRCreateIngredientTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B686912215B8D88700D54CEC /* PPRCreateIngredientTypeViewController.m */; };
+		B69802D816C1ABBF009446A0 /* PPRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BDD530152B73BA00637A3F /* PPRAppDelegate.m */; };
+		B69A6F6D157E98A6001DDF0F /* PPREditRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69A6F6C157E98A6001DDF0F /* PPREditRecipeViewController.m */; };
+		B6AAF4A9152B7AC600AB0CF7 /* PPRecipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6AAF4A5152B7AC600AB0CF7 /* PPRecipes.xcdatamodeld */; };
+		B6B86726159BAC7C000BDDB7 /* PPRExportOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B86725159BAC7C000BDDB7 /* PPRExportOperation.m */; };
+		B6BDD51F152B73BA00637A3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BDD51E152B73BA00637A3F /* UIKit.framework */; };
+		B6BDD521152B73BA00637A3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BDD520152B73BA00637A3F /* Foundation.framework */; };
+		B6BDD523152B73BA00637A3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BDD522152B73BA00637A3F /* CoreGraphics.framework */; };
+		B6BDD525152B73BA00637A3F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BDD524152B73BA00637A3F /* CoreData.framework */; };
+		B6BDD52B152B73BA00637A3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6BDD529152B73BA00637A3F /* InfoPlist.strings */; };
+		B6BDD52D152B73BA00637A3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BDD52C152B73BA00637A3F /* main.m */; };
+		B6BDD534152B73BA00637A3F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BDD532152B73BA00637A3F /* MainStoryboard_iPhone.storyboard */; };
+		B6BDD537152B73BA00637A3F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BDD535152B73BA00637A3F /* MainStoryboard_iPad.storyboard */; };
+		B6BDD53D152B73BA00637A3F /* PPRMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BDD53C152B73BA00637A3F /* PPRMasterViewController.m */; };
+		B6BDD540152B73BA00637A3F /* PPRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BDD53F152B73BA00637A3F /* PPRDetailViewController.m */; };
+		B6BE42491593E60500D6EEC4 /* PPRSelectAuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BE42481593E60500D6EEC4 /* PPRSelectAuthorViewController.m */; };
+		B6D5FB1F15B7530E0087C767 /* PPRAddRecipeIngredientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5FB1D15B7530E0087C767 /* PPRAddRecipeIngredientViewController.m */; };
+		B6DA66F915B5DA8F0022B47B /* PPREditIngredientListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DA66F815B5DA8F0022B47B /* PPREditIngredientListViewController.m */; };
+		B6E42E19157EC12600A9EC7F /* PPRSetDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E42E18157EC12600A9EC7F /* PPRSetDateViewController.m */; };
+		B6F4BD581593F7B00013CB3E /* PPRAddAuthorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6F4BD561593F7B00013CB3E /* PPRAddAuthorView.xib */; };
+		B6F87EA515B8DB9D0069D26D /* PPRSelectUnitOfMeasureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F87EA415B8DB9D0069D26D /* PPRSelectUnitOfMeasureViewController.m */; };
+		B6FEAE4F157EA11A007ED543 /* PPRRecipeMO.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FEAE4E157EA11A007ED543 /* PPRRecipeMO.m */; };
+		B6FEAE52157EA3C1007ED543 /* PPRTextEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FEAE51157EA3C1007ED543 /* PPRTextEditViewController.m */; };
+		B6FEAE55157EB142007ED543 /* PPRSelectTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FEAE54157EB142007ED543 /* PPRSelectTypeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B626255915B8CB7100136BA8 /* PPRSelectIngredientTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRSelectIngredientTypeViewController.h; sourceTree = "<group>"; };
+		B626255A15B8CB7100136BA8 /* PPRSelectIngredientTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRSelectIngredientTypeViewController.m; sourceTree = "<group>"; };
+		B631D23D1599623400A4D3EC /* PPRImportOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRImportOperation.h; sourceTree = "<group>"; };
+		B631D23E1599623400A4D3EC /* PPRImportOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRImportOperation.m; sourceTree = "<group>"; };
+		B668353215E6911000982085 /* PPRAppDelegateAlt2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPRAppDelegateAlt2.m; sourceTree = "<group>"; };
+		B686912115B8D88700D54CEC /* PPRCreateIngredientTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRCreateIngredientTypeViewController.h; sourceTree = "<group>"; };
+		B686912215B8D88700D54CEC /* PPRCreateIngredientTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRCreateIngredientTypeViewController.m; sourceTree = "<group>"; };
+		B687A5EA159D619A005FF376 /* PPRAppDelegateAlt1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRAppDelegateAlt1.m; sourceTree = "<group>"; };
+		B687A5EE159D6DC9005FF376 /* PPRImportOperationAlt1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRImportOperationAlt1.m; sourceTree = "<group>"; };
+		B69A6F6B157E98A6001DDF0F /* PPREditRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPREditRecipeViewController.h; sourceTree = "<group>"; };
+		B69A6F6C157E98A6001DDF0F /* PPREditRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPREditRecipeViewController.m; sourceTree = "<group>"; };
+		B6AAF4A6152B7AC600AB0CF7 /* v1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = v1.xcdatamodel; sourceTree = "<group>"; };
+		B6AAF4A7152B7AC600AB0CF7 /* v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = v2.xcdatamodel; sourceTree = "<group>"; };
+		B6AAF4A8152B7AC600AB0CF7 /* v3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = v3.xcdatamodel; sourceTree = "<group>"; };
+		B6B86724159BAC7C000BDDB7 /* PPRExportOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRExportOperation.h; sourceTree = "<group>"; };
+		B6B86725159BAC7C000BDDB7 /* PPRExportOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRExportOperation.m; sourceTree = "<group>"; };
+		B6BDD51A152B73BA00637A3F /* PPRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6BDD51E152B73BA00637A3F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B6BDD520152B73BA00637A3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6BDD522152B73BA00637A3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6BDD524152B73BA00637A3F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B6BDD528152B73BA00637A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6BDD52A152B73BA00637A3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6BDD52C152B73BA00637A3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6BDD52E152B73BA00637A3F /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		B6BDD52F152B73BA00637A3F /* PPRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPRAppDelegate.h; sourceTree = "<group>"; };
+		B6BDD530152B73BA00637A3F /* PPRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPRAppDelegate.m; sourceTree = "<group>"; };
+		B6BDD533152B73BA00637A3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B6BDD536152B73BA00637A3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		B6BDD53B152B73BA00637A3F /* PPRMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPRMasterViewController.h; sourceTree = "<group>"; };
+		B6BDD53C152B73BA00637A3F /* PPRMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPRMasterViewController.m; sourceTree = "<group>"; };
+		B6BDD53E152B73BA00637A3F /* PPRDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPRDetailViewController.h; sourceTree = "<group>"; };
+		B6BDD53F152B73BA00637A3F /* PPRDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPRDetailViewController.m; sourceTree = "<group>"; };
+		B6BE42471593E60500D6EEC4 /* PPRSelectAuthorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRSelectAuthorViewController.h; sourceTree = "<group>"; };
+		B6BE42481593E60500D6EEC4 /* PPRSelectAuthorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRSelectAuthorViewController.m; sourceTree = "<group>"; };
+		B6D1F6E2152B943D0027F4E6 /* PPRecipes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PPRecipes.entitlements; sourceTree = "<group>"; };
+		B6D5FB1C15B7530E0087C767 /* PPRAddRecipeIngredientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRAddRecipeIngredientViewController.h; sourceTree = "<group>"; };
+		B6D5FB1D15B7530E0087C767 /* PPRAddRecipeIngredientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRAddRecipeIngredientViewController.m; sourceTree = "<group>"; };
+		B6DA66F715B5DA8F0022B47B /* PPREditIngredientListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPREditIngredientListViewController.h; sourceTree = "<group>"; };
+		B6DA66F815B5DA8F0022B47B /* PPREditIngredientListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPREditIngredientListViewController.m; sourceTree = "<group>"; };
+		B6E42E17157EC12600A9EC7F /* PPRSetDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRSetDateViewController.h; sourceTree = "<group>"; };
+		B6E42E18157EC12600A9EC7F /* PPRSetDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRSetDateViewController.m; sourceTree = "<group>"; };
+		B6F4BD571593F7B00013CB3E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PPRAddAuthorView.xib; sourceTree = "<group>"; };
+		B6F87EA315B8DB9D0069D26D /* PPRSelectUnitOfMeasureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRSelectUnitOfMeasureViewController.h; sourceTree = "<group>"; };
+		B6F87EA415B8DB9D0069D26D /* PPRSelectUnitOfMeasureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRSelectUnitOfMeasureViewController.m; sourceTree = "<group>"; };
+		B6FEAE4D157EA11A007ED543 /* PPRRecipeMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRRecipeMO.h; sourceTree = "<group>"; };
+		B6FEAE4E157EA11A007ED543 /* PPRRecipeMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRRecipeMO.m; sourceTree = "<group>"; };
+		B6FEAE50157EA3C1007ED543 /* PPRTextEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRTextEditViewController.h; sourceTree = "<group>"; };
+		B6FEAE51157EA3C1007ED543 /* PPRTextEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRTextEditViewController.m; sourceTree = "<group>"; };
+		B6FEAE53157EB142007ED543 /* PPRSelectTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRSelectTypeViewController.h; sourceTree = "<group>"; };
+		B6FEAE54157EB142007ED543 /* PPRSelectTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRSelectTypeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6BDD517152B73BA00637A3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6BDD51F152B73BA00637A3F /* UIKit.framework in Frameworks */,
+				B6BDD521152B73BA00637A3F /* Foundation.framework in Frameworks */,
+				B6BDD523152B73BA00637A3F /* CoreGraphics.framework in Frameworks */,
+				B6BDD525152B73BA00637A3F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6BDD50F152B73B700637A3F = {
+			isa = PBXGroup;
+			children = (
+				B6BDD526152B73BA00637A3F /* PPRecipes */,
+				B6BDD51D152B73BA00637A3F /* Frameworks */,
+				B6BDD51B152B73BA00637A3F /* Products */,
+				B6AAF4A5152B7AC600AB0CF7 /* PPRecipes.xcdatamodeld */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		B6BDD51B152B73BA00637A3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6BDD51A152B73BA00637A3F /* PPRecipes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6BDD51D152B73BA00637A3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6BDD51E152B73BA00637A3F /* UIKit.framework */,
+				B6BDD520152B73BA00637A3F /* Foundation.framework */,
+				B6BDD522152B73BA00637A3F /* CoreGraphics.framework */,
+				B6BDD524152B73BA00637A3F /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6BDD526152B73BA00637A3F /* PPRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				B668353215E6911000982085 /* PPRAppDelegateAlt2.m */,
+				B687A5EE159D6DC9005FF376 /* PPRImportOperationAlt1.m */,
+				B687A5EA159D619A005FF376 /* PPRAppDelegateAlt1.m */,
+				B6FEAE4B157EA041007ED543 /* Data Objects */,
+				B6D1F6E2152B943D0027F4E6 /* PPRecipes.entitlements */,
+				B6BDD52F152B73BA00637A3F /* PPRAppDelegate.h */,
+				B6BDD530152B73BA00637A3F /* PPRAppDelegate.m */,
+				B6BDD532152B73BA00637A3F /* MainStoryboard_iPhone.storyboard */,
+				B6BDD535152B73BA00637A3F /* MainStoryboard_iPad.storyboard */,
+				B6BDD53B152B73BA00637A3F /* PPRMasterViewController.h */,
+				B6BDD53C152B73BA00637A3F /* PPRMasterViewController.m */,
+				B6BDD53E152B73BA00637A3F /* PPRDetailViewController.h */,
+				B6BDD53F152B73BA00637A3F /* PPRDetailViewController.m */,
+				B6BDD527152B73BA00637A3F /* Supporting Files */,
+				B69A6F6B157E98A6001DDF0F /* PPREditRecipeViewController.h */,
+				B69A6F6C157E98A6001DDF0F /* PPREditRecipeViewController.m */,
+				B6FEAE50157EA3C1007ED543 /* PPRTextEditViewController.h */,
+				B6FEAE51157EA3C1007ED543 /* PPRTextEditViewController.m */,
+				B6FEAE53157EB142007ED543 /* PPRSelectTypeViewController.h */,
+				B6FEAE54157EB142007ED543 /* PPRSelectTypeViewController.m */,
+				B6E42E17157EC12600A9EC7F /* PPRSetDateViewController.h */,
+				B6E42E18157EC12600A9EC7F /* PPRSetDateViewController.m */,
+				B6BE42471593E60500D6EEC4 /* PPRSelectAuthorViewController.h */,
+				B6BE42481593E60500D6EEC4 /* PPRSelectAuthorViewController.m */,
+				B6F4BD561593F7B00013CB3E /* PPRAddAuthorView.xib */,
+				B631D23D1599623400A4D3EC /* PPRImportOperation.h */,
+				B631D23E1599623400A4D3EC /* PPRImportOperation.m */,
+				B6B86724159BAC7C000BDDB7 /* PPRExportOperation.h */,
+				B6B86725159BAC7C000BDDB7 /* PPRExportOperation.m */,
+				B6DA66F715B5DA8F0022B47B /* PPREditIngredientListViewController.h */,
+				B6DA66F815B5DA8F0022B47B /* PPREditIngredientListViewController.m */,
+				B6D5FB1C15B7530E0087C767 /* PPRAddRecipeIngredientViewController.h */,
+				B6D5FB1D15B7530E0087C767 /* PPRAddRecipeIngredientViewController.m */,
+				B626255915B8CB7100136BA8 /* PPRSelectIngredientTypeViewController.h */,
+				B626255A15B8CB7100136BA8 /* PPRSelectIngredientTypeViewController.m */,
+				B686912115B8D88700D54CEC /* PPRCreateIngredientTypeViewController.h */,
+				B686912215B8D88700D54CEC /* PPRCreateIngredientTypeViewController.m */,
+				B6F87EA315B8DB9D0069D26D /* PPRSelectUnitOfMeasureViewController.h */,
+				B6F87EA415B8DB9D0069D26D /* PPRSelectUnitOfMeasureViewController.m */,
+			);
+			path = PPRecipes;
+			sourceTree = "<group>";
+		};
+		B6BDD527152B73BA00637A3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6BDD528152B73BA00637A3F /* Info.plist */,
+				B6BDD529152B73BA00637A3F /* InfoPlist.strings */,
+				B6BDD52C152B73BA00637A3F /* main.m */,
+				B6BDD52E152B73BA00637A3F /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6FEAE4B157EA041007ED543 /* Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B6FEAE4D157EA11A007ED543 /* PPRRecipeMO.h */,
+				B6FEAE4E157EA11A007ED543 /* PPRRecipeMO.m */,
+			);
+			name = "Data Objects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6BDD519152B73BA00637A3F /* PPRecipes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6BDD543152B73BA00637A3F /* Build configuration list for PBXNativeTarget "PPRecipes" */;
+			buildPhases = (
+				B6BDD516152B73BA00637A3F /* Sources */,
+				B6BDD517152B73BA00637A3F /* Frameworks */,
+				B6BDD518152B73BA00637A3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PPRecipes;
+			productName = PPRecipes;
+			productReference = B6BDD51A152B73BA00637A3F /* PPRecipes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6BDD511152B73B700637A3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PPR;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "The Pragmatic Programmer";
+			};
+			buildConfigurationList = B6BDD514152B73B700637A3F /* Build configuration list for PBXProject "PPRecipes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B6BDD50F152B73B700637A3F;
+			productRefGroup = B6BDD51B152B73BA00637A3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6BDD519152B73BA00637A3F /* PPRecipes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6BDD518152B73BA00637A3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6BDD52B152B73BA00637A3F /* InfoPlist.strings in Resources */,
+				B6BDD534152B73BA00637A3F /* MainStoryboard_iPhone.storyboard in Resources */,
+				B6BDD537152B73BA00637A3F /* MainStoryboard_iPad.storyboard in Resources */,
+				B6F4BD581593F7B00013CB3E /* PPRAddAuthorView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6BDD516152B73BA00637A3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6BDD52D152B73BA00637A3F /* main.m in Sources */,
+				B6BDD53D152B73BA00637A3F /* PPRMasterViewController.m in Sources */,
+				B6BDD540152B73BA00637A3F /* PPRDetailViewController.m in Sources */,
+				B6AAF4A9152B7AC600AB0CF7 /* PPRecipes.xcdatamodeld in Sources */,
+				B69A6F6D157E98A6001DDF0F /* PPREditRecipeViewController.m in Sources */,
+				B6FEAE4F157EA11A007ED543 /* PPRRecipeMO.m in Sources */,
+				B6FEAE52157EA3C1007ED543 /* PPRTextEditViewController.m in Sources */,
+				B6FEAE55157EB142007ED543 /* PPRSelectTypeViewController.m in Sources */,
+				B6E42E19157EC12600A9EC7F /* PPRSetDateViewController.m in Sources */,
+				B6BE42491593E60500D6EEC4 /* PPRSelectAuthorViewController.m in Sources */,
+				B631D23F1599623400A4D3EC /* PPRImportOperation.m in Sources */,
+				B6B86726159BAC7C000BDDB7 /* PPRExportOperation.m in Sources */,
+				B6DA66F915B5DA8F0022B47B /* PPREditIngredientListViewController.m in Sources */,
+				B6D5FB1F15B7530E0087C767 /* PPRAddRecipeIngredientViewController.m in Sources */,
+				B626255B15B8CB7200136BA8 /* PPRSelectIngredientTypeViewController.m in Sources */,
+				B686912315B8D88700D54CEC /* PPRCreateIngredientTypeViewController.m in Sources */,
+				B6F87EA515B8DB9D0069D26D /* PPRSelectUnitOfMeasureViewController.m in Sources */,
+				B69802D816C1ABBF009446A0 /* PPRAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6BDD529152B73BA00637A3F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6BDD52A152B73BA00637A3F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B6BDD532152B73BA00637A3F /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6BDD533152B73BA00637A3F /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B6BDD535152B73BA00637A3F /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6BDD536152B73BA00637A3F /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		B6F4BD561593F7B00013CB3E /* PPRAddAuthorView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6F4BD571593F7B00013CB3E /* en */,
+			);
+			name = PPRAddAuthorView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6BDD541152B73BA00637A3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6BDD542152B73BA00637A3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6BDD544152B73BA00637A3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PPRecipes/Prefix.pch;
+				INFOPLIST_FILE = PPRecipes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B6BDD545152B73BA00637A3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PPRecipes/Prefix.pch;
+				INFOPLIST_FILE = PPRecipes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6BDD514152B73B700637A3F /* Build configuration list for PBXProject "PPRecipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6BDD541152B73BA00637A3F /* Debug */,
+				B6BDD542152B73BA00637A3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6BDD543152B73BA00637A3F /* Build configuration list for PBXNativeTarget "PPRecipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6BDD544152B73BA00637A3F /* Debug */,
+				B6BDD545152B73BA00637A3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6AAF4A5152B7AC600AB0CF7 /* PPRecipes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6AAF4A6152B7AC600AB0CF7 /* v1.xcdatamodel */,
+				B6AAF4A7152B7AC600AB0CF7 /* v2.xcdatamodel */,
+				B6AAF4A8152B7AC600AB0CF7 /* v3.xcdatamodel */,
+			);
+			currentVersion = B6AAF4A8152B7AC600AB0CF7 /* v3.xcdatamodel */;
+			name = PPRecipes.xcdatamodeld;
+			path = PPRecipes/PPRecipes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B6BDD511152B73B700637A3F /* Project object */;
+}
