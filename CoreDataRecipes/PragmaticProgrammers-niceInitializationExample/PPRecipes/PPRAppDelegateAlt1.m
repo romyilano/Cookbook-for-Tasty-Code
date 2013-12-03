@@ -63,6 +63,7 @@
 
 #pragma mark - Core Data stack
 
+// Romy - I like this - nice initialization method and he puts it all in one place
 - (void)initializeCoreDataStack
 {
   NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"PPRecipes" withExtension:@"momd"];
@@ -87,6 +88,8 @@
   [self setPrivateContext:private];
   
   [self setManagedObjectContext:moc];
+  
+  // Romy - nice!!! thank you
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     NSURL *storeURL = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
     storeURL = [storeURL URLByAppendingPathComponent:@"PPRecipes.sqlite"];
