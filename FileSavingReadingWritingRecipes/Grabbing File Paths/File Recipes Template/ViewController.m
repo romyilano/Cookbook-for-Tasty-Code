@@ -41,6 +41,10 @@
     {
         NSLog(@"could not find the Documents folder");
     }
+    
+    // temporary files use the C function NSTemporaryDirectory()
+    NSString *tempDirectory = NSTemporaryDirectory();
+    NSLog(@"Temp directory = %@", tempDirectory);
 }
 
 - (void)didReceiveMemoryWarning

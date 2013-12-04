@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1C47D7BC184EE7C50020ED1D"
-               BuildableName = "File Recipes Template.app"
+               BuildableName = "Finding Paths of Useful Folders.app"
                BlueprintName = "Finding Paths of Useful Folders"
                ReferencedContainer = "container:Finding Paths of Useful Folders.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1C47D7DD184EE7C60020ED1D"
-               BuildableName = "File Recipes TemplateTests.xctest"
+               BuildableName = "Finding Paths of Useful FoldersTests.xctest"
                BlueprintName = "Finding Paths of Useful FoldersTests"
                ReferencedContainer = "container:Finding Paths of Useful Folders.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1C47D7BC184EE7C50020ED1D"
-            BuildableName = "File Recipes Template.app"
+            BuildableName = "Finding Paths of Useful Folders.app"
             BlueprintName = "Finding Paths of Useful Folders"
             ReferencedContainer = "container:Finding Paths of Useful Folders.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1C47D7BC184EE7C50020ED1D"
-            BuildableName = "File Recipes Template.app"
+            BuildableName = "Finding Paths of Useful Folders.app"
             BlueprintName = "Finding Paths of Useful Folders"
             ReferencedContainer = "container:Finding Paths of Useful Folders.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1C47D7BC184EE7C50020ED1D"
-            BuildableName = "File Recipes Template.app"
+            BuildableName = "Finding Paths of Useful Folders.app"
             BlueprintName = "Finding Paths of Useful Folders"
             ReferencedContainer = "container:Finding Paths of Useful Folders.xcodeproj">
          </BuildableReference>
