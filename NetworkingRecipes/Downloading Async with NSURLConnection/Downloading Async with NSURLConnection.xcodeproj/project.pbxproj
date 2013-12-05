@@ -21,6 +21,7 @@
 		1CB2D1F71850C44F00DFF4D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB2D1D91850C44F00DFF4D0 /* UIKit.framework */; };
 		1CB2D1FF1850C44F00DFF4D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CB2D1FD1850C44F00DFF4D0 /* InfoPlist.strings */; };
 		1CB2D2011850C44F00DFF4D0 /* Downloading_Async_with_NSURLConnectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2D2001850C44F00DFF4D0 /* Downloading_Async_with_NSURLConnectionTests.m */; };
+		1CB2D20B1850C4A200DFF4D0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1CB2D20A1850C4A200DFF4D0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1CB2D1FC1850C44F00DFF4D0 /* Downloading Async with NSURLConnectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Downloading Async with NSURLConnectionTests-Info.plist"; sourceTree = "<group>"; };
 		1CB2D1FE1850C44F00DFF4D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1CB2D2001850C44F00DFF4D0 /* Downloading_Async_with_NSURLConnectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Downloading_Async_with_NSURLConnectionTests.m; sourceTree = "<group>"; };
+		1CB2D20A1850C4A200DFF4D0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		1CB2D1C91850C44F00DFF4D0 = {
 			isa = PBXGroup;
 			children = (
+				1CB2D20A1850C4A200DFF4D0 /* README.md */,
 				1CB2D1DB1850C44F00DFF4D0 /* Downloading Async with NSURLConnection */,
 				1CB2D1FA1850C44F00DFF4D0 /* Downloading Async with NSURLConnectionTests */,
 				1CB2D1D41850C44F00DFF4D0 /* Frameworks */,
@@ -230,6 +233,7 @@
 			files = (
 				1CB2D1EE1850C44F00DFF4D0 /* Images.xcassets in Resources */,
 				1CB2D1E01850C44F00DFF4D0 /* InfoPlist.strings in Resources */,
+				1CB2D20B1850C4A200DFF4D0 /* README.md in Resources */,
 				1CB2D1E91850C44F00DFF4D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
