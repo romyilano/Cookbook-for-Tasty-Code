@@ -1,4 +1,5 @@
 # Created by http://gitignore.io
+Constants.h
 
 ### OSX ###
 .DS_Store
