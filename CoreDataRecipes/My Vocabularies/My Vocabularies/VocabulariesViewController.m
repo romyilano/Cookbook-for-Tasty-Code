@@ -45,6 +45,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self fetchVocabularies];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,7 +57,7 @@
 #pragma mark - Custom Methods
     
 // Nice quick and dirty way to get the goods
--(void)fetchVocaulabries
+-(void)fetchVocabularies
 {
  
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Vocabulary"];
@@ -76,6 +77,14 @@
     if(![self.frc performFetch:&error])
     {
         NSLog(@"Fetch failed: %@", error);
+    }
+    
+    if ([[[self frc] fetchedObjects] count] == 0)
+    {
+        [[[UIAlertView alloc] initWithTitle:@"Blank Slate"
+                                    message:@"Hey! You haven't added any vocabulary words yet"
+                                   delegate:self
+                          cancelButtonTitle:nil otherButtonTitles:@"OK", nil] show];
     }
 }
 

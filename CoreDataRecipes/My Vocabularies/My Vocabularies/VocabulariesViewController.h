@@ -14,5 +14,5 @@
 @property (strong, nonatomic) NSFetchedResultsController *frc;
     
 -(id)initWithManagedObjectContext:(NSManagedObjectContext *)context;
--(void)fetchVocaulabries;
+-(void)fetchVocabularies;
 @end
