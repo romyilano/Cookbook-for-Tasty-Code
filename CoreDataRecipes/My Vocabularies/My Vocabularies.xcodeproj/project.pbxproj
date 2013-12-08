@@ -25,6 +25,7 @@
 		1C2661E71854E9AC001F982E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C2661E61854E9AC001F982E /* README.md */; };
 		1C2661EA1854EC22001F982E /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2661E91854EC22001F982E /* Word.m */; };
 		1C2661ED1854EC22001F982E /* Vocabulary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2661EC1854EC22001F982E /* Vocabulary.m */; };
+		1C2661F11854EC53001F982E /* VocabulariesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2661F01854EC53001F982E /* VocabulariesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		1C2661E91854EC22001F982E /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
 		1C2661EB1854EC22001F982E /* Vocabulary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vocabulary.h; sourceTree = "<group>"; };
 		1C2661EC1854EC22001F982E /* Vocabulary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vocabulary.m; sourceTree = "<group>"; };
+		1C2661EF1854EC53001F982E /* VocabulariesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VocabulariesViewController.h; sourceTree = "<group>"; };
+		1C2661F01854EC53001F982E /* VocabulariesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VocabulariesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 			children = (
 				1C2661C21854E98F001F982E /* AppDelegate.h */,
 				1C2661C31854E98F001F982E /* AppDelegate.m */,
+				1C2661EF1854EC53001F982E /* VocabulariesViewController.h */,
+				1C2661F01854EC53001F982E /* VocabulariesViewController.m */,
 				1C2661C81854E98F001F982E /* Images.xcassets */,
 				1C2661EE1854EC27001F982E /* = Models */,
 				1C2661BA1854E98F001F982E /* Supporting Files */,
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C2661F11854EC53001F982E /* VocabulariesViewController.m in Sources */,
 				1C2661C41854E98F001F982E /* AppDelegate.m in Sources */,
 				1C2661EA1854EC22001F982E /* Word.m in Sources */,
 				1C2661C01854E98F001F982E /* main.m in Sources */,
