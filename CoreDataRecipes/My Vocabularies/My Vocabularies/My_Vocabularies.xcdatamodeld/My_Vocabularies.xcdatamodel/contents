@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="13A603" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Vocabulary" syncable="YES">
+    <entity name="Vocabulary" representedClassName="Vocabulary" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="words" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Word" inverseName="vocabulary" inverseEntity="Word" syncable="YES"/>
+        <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Word" inverseName="vocabulary" inverseEntity="Word" syncable="YES"/>
     </entity>
-    <entity name="Word" syncable="YES">
+    <entity name="Word" representedClassName="Word" syncable="YES">
         <attribute name="translation" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="word" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="vocabulary" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vocabulary" inverseName="words" inverseEntity="Vocabulary" syncable="YES"/>
