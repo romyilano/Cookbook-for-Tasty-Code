@@ -26,6 +26,7 @@
 		1C2661EA1854EC22001F982E /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2661E91854EC22001F982E /* Word.m */; };
 		1C2661ED1854EC22001F982E /* Vocabulary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2661EC1854EC22001F982E /* Vocabulary.m */; };
 		1C2661F11854EC53001F982E /* VocabulariesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2661F01854EC53001F982E /* VocabulariesViewController.m */; };
+		1C2661F41854F149001F982E /* iOS Simulator Screen shot Dec 8, 2013, 10.25.51 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C2661F31854F149001F982E /* iOS Simulator Screen shot Dec 8, 2013, 10.25.51 AM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		1C2661EC1854EC22001F982E /* Vocabulary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vocabulary.m; sourceTree = "<group>"; };
 		1C2661EF1854EC53001F982E /* VocabulariesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VocabulariesViewController.h; sourceTree = "<group>"; };
 		1C2661F01854EC53001F982E /* VocabulariesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VocabulariesViewController.m; sourceTree = "<group>"; };
+		1C2661F31854F149001F982E /* iOS Simulator Screen shot Dec 8, 2013, 10.25.51 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Dec 8, 2013, 10.25.51 AM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		1C2661BA1854E98F001F982E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1C2661F21854F13B001F982E /* Screenshots */,
 				1C2661BB1854E98F001F982E /* My Vocabularies-Info.plist */,
 				1C2661BC1854E98F001F982E /* InfoPlist.strings */,
 				1C2661BF1854E98F001F982E /* main.m */,
@@ -177,6 +180,14 @@
 				1C2661E91854EC22001F982E /* Word.m */,
 			);
 			name = "= Models";
+			sourceTree = "<group>";
+		};
+		1C2661F21854F13B001F982E /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				1C2661F31854F149001F982E /* iOS Simulator Screen shot Dec 8, 2013, 10.25.51 AM.png */,
+			);
+			name = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C2661F41854F149001F982E /* iOS Simulator Screen shot Dec 8, 2013, 10.25.51 AM.png in Resources */,
 				1C2661E71854E9AC001F982E /* README.md in Resources */,
 				1C2661BE1854E98F001F982E /* InfoPlist.strings in Resources */,
 				1C2661C91854E98F001F982E /* Images.xcassets in Resources */,

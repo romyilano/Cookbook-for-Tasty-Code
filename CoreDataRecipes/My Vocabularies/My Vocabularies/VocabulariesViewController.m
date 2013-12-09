@@ -45,6 +45,14 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.title = @"Vocabularies";
+    
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add)];
+    
+    self.navigationItem.rightBarButtonItem = addButton;
+    
+    
     [self fetchVocabularies];
 }
 
@@ -88,6 +96,44 @@
     }
 }
 
+-(void)add
+{
+
+    UIAlertView *inputAlert = [[UIAlertView alloc] initWithTitle:@"New Vocabulary"
+                                                         message:@"Enter a name for a new vocabulary"
+                                                        delegate:self
+                                               cancelButtonTitle:@"Cancel"
+                                               otherButtonTitles:@"OK", nil];
+    inputAlert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [inputAlert show];
+    
+}
+    
+#pragma mark - UIAlertViewDelegate Methods
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1)
+    {
+        NSEntityDescription *vocabularyEntityDescription = [NSEntityDescription entityForName:@"Vocabulary"
+                                                                       inManagedObjectContext:self.moc];
+        
+        Vocabulary *newVocabulary = (Vocabulary *)[[NSManagedObject alloc] initWithEntity:vocabularyEntityDescription
+                                                           insertIntoManagedObjectContext:self.moc];
+        newVocabulary.name = [alertView textFieldAtIndex:0].text;
+        
+        NSError *error = nil;
+        
+        if (![self.moc save:&error])
+        {
+            NSLog(@"error saving context: %@", error);
+        }
+        
+        [self fetchVocabularies];
+        [self.tableView reloadData];
+        
+    }
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -124,7 +170,7 @@
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
-}
+}self	VocabulariesViewController *	0x8a79170	0x08a79170
 */
 
 /*
