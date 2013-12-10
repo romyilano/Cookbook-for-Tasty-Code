@@ -22,8 +22,6 @@
 		1C65316618568F8800CB81BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C65316418568F8800CB81BC /* InfoPlist.strings */; };
 		1C65316818568F8800CB81BC /* Retrieving_List_of_CalendarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C65316718568F8800CB81BC /* Retrieving_List_of_CalendarsTests.m */; };
 		1C65317218568F9500CB81BC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C65317118568F9500CB81BC /* README.md */; };
-		1C6531741856900F00CB81BC /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6531731856900F00CB81BC /* EventKit.framework */; };
-		1C6531761856901400CB81BC /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6531751856901400CB81BC /* EventKitUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +55,6 @@
 		1C65316518568F8800CB81BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1C65316718568F8800CB81BC /* Retrieving_List_of_CalendarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Retrieving_List_of_CalendarsTests.m; sourceTree = "<group>"; };
 		1C65317118568F9500CB81BC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		1C6531731856900F00CB81BC /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
-		1C6531751856901400CB81BC /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C6531761856901400CB81BC /* EventKitUI.framework in Frameworks */,
-				1C6531741856900F00CB81BC /* EventKit.framework in Frameworks */,
 				1C65313F18568F8800CB81BC /* CoreGraphics.framework in Frameworks */,
 				1C65314118568F8800CB81BC /* UIKit.framework in Frameworks */,
 				1C65313D18568F8800CB81BC /* Foundation.framework in Frameworks */,
@@ -110,8 +104,6 @@
 		1C65313B18568F8800CB81BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1C6531751856901400CB81BC /* EventKitUI.framework */,
-				1C6531731856900F00CB81BC /* EventKit.framework */,
 				1C65313C18568F8800CB81BC /* Foundation.framework */,
 				1C65313E18568F8800CB81BC /* CoreGraphics.framework */,
 				1C65314018568F8800CB81BC /* UIKit.framework */,

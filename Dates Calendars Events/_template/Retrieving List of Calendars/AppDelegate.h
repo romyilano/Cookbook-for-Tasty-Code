@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <EventKit/EventKit.h>
-#import <EventKitUI/EventKitUI.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

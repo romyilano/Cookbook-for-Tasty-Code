@@ -13,43 +13,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
-    EKEventStore *eventStore = [[EKEventStore alloc] init];
-    
-    /*
-     Calendar types an iOS Device can have
-     */
-    NSArray *calendarTypes = @[@"Local", @"CalDAV", @"Exchange", @"Subscription", @"Birthday"];
-    
-    // go through calendars one by one
-    NSUInteger counter = 1;
-    for (EKCalendar *thisCalendar in eventStore.calendars)
-    {
-        // title of the calendar
-        NSLog(@"Calendar %lu Title = %@", (unsigned long)counter, thisCalendar.title);
-        
-        // type of calendar
-        NSLog(@"Calendar %lu Type = %@", (unsigned long)counter, [calendarTypes objectAtIndex:thisCalendar.type]);
-        
-        // color associate with the calendar
-        NSLog(@"Calendar %lu Color = %@", (unsigned long)counter, [UIColor colorWithCGColor:thisCalendar.CGColor]);
-        
-        // whether calendar can be modified or not
-        if([thisCalendar allowsContentModifications])
-        {
-            NSLog(@"Calendar %lu can be modified.", (unsigned long)counter);
-            
-        } else
-        {
-            NSLog(@"Calendar %lu cannot be modified", (unsigned long)counter);
-        }
-        
-        counter++;
-    }
-    
-    
-    
-    
     return YES;
 }
 							
