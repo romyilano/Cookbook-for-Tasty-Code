@@ -85,6 +85,7 @@
 
 // Returns the managed object model for the application.
 // If the model doesn't already exist, it is created from the application's model.
+// Same concept as a schema in a database
 - (NSManagedObjectModel *)managedObjectModel
 {
     if (_managedObjectModel != nil) {
