@@ -22,6 +22,7 @@
 		1CF358A3188750A40056E6AC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF35887188750A40056E6AC /* CoreData.framework */; };
 		1CF358AB188750A40056E6AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CF358A9188750A40056E6AC /* InfoPlist.strings */; };
 		1CF358AD188750A40056E6AC /* Basic_Core_DataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF358AC188750A40056E6AC /* Basic_Core_DataTests.m */; };
+		1CF358B8188755C90056E6AC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF358B7188755C90056E6AC /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		1CF358A8188750A40056E6AC /* Basic Core DataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Basic Core DataTests-Info.plist"; sourceTree = "<group>"; };
 		1CF358AA188750A40056E6AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1CF358AC188750A40056E6AC /* Basic_Core_DataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Basic_Core_DataTests.m; sourceTree = "<group>"; };
+		1CF358B6188755C90056E6AC /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		1CF358B7188755C90056E6AC /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				1CF35893188750A40056E6AC /* AppDelegate.m */,
 				1CF35898188750A40056E6AC /* Images.xcassets */,
 				1CF35895188750A40056E6AC /* Basic_Core_Data.xcdatamodeld */,
+				1CF358B6188755C90056E6AC /* Person.h */,
+				1CF358B7188755C90056E6AC /* Person.m */,
 				1CF3588A188750A40056E6AC /* Supporting Files */,
 			);
 			path = "Basic Core Data";
@@ -250,6 +255,7 @@
 			files = (
 				1CF35894188750A40056E6AC /* AppDelegate.m in Sources */,
 				1CF35897188750A40056E6AC /* Basic_Core_Data.xcdatamodeld in Sources */,
+				1CF358B8188755C90056E6AC /* Person.m in Sources */,
 				1CF35890188750A40056E6AC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
