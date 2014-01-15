@@ -23,6 +23,7 @@
     
     // go through calendars one by one
     NSUInteger counter = 1;
+    
     for (EKCalendar *thisCalendar in eventStore.calendars)
     {
         // title of the calendar
