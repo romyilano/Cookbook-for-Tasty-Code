@@ -25,6 +25,8 @@
 		1CF359431887730F0056E6AC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1CF359421887730F0056E6AC /* README.md */; };
 		1CF3594618877BA50056E6AC /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF3594518877BA50056E6AC /* Word.m */; };
 		1CF3594918877BA60056E6AC /* Vocabulary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF3594818877BA60056E6AC /* Vocabulary.m */; };
+		1CF3594D18877D400056E6AC /* VocabulariesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF3594B18877D400056E6AC /* VocabulariesViewController.m */; };
+		1CF3594E18877D400056E6AC /* VocabulariesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF3594C18877D400056E6AC /* VocabulariesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		1CF3594518877BA50056E6AC /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
 		1CF3594718877BA60056E6AC /* Vocabulary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vocabulary.h; sourceTree = "<group>"; };
 		1CF3594818877BA60056E6AC /* Vocabulary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vocabulary.m; sourceTree = "<group>"; };
+		1CF3594A18877D400056E6AC /* VocabulariesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VocabulariesViewController.h; sourceTree = "<group>"; };
+		1CF3594B18877D400056E6AC /* VocabulariesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VocabulariesViewController.m; sourceTree = "<group>"; };
+		1CF3594C18877D400056E6AC /* VocabulariesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VocabulariesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +131,9 @@
 			children = (
 				1CF3591E188773050056E6AC /* AppDelegate.h */,
 				1CF3591F188773050056E6AC /* AppDelegate.m */,
+				1CF3594A18877D400056E6AC /* VocabulariesViewController.h */,
+				1CF3594B18877D400056E6AC /* VocabulariesViewController.m */,
+				1CF3594C18877D400056E6AC /* VocabulariesViewController.xib */,
 				1CF35924188773050056E6AC /* Images.xcassets */,
 				1CF35921188773050056E6AC /* Vocabularies.xcdatamodeld */,
 				1CF3594718877BA60056E6AC /* Vocabulary.h */,
@@ -243,6 +251,7 @@
 			files = (
 				1CF359431887730F0056E6AC /* README.md in Resources */,
 				1CF3591A188773050056E6AC /* InfoPlist.strings in Resources */,
+				1CF3594E18877D400056E6AC /* VocabulariesViewController.xib in Resources */,
 				1CF35925188773050056E6AC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CF3594D18877D400056E6AC /* VocabulariesViewController.m in Sources */,
 				1CF35923188773050056E6AC /* Vocabularies.xcdatamodeld in Sources */,
 				1CF3594618877BA50056E6AC /* Word.m in Sources */,
 				1CF35920188773050056E6AC /* AppDelegate.m in Sources */,
