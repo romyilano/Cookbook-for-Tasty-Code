@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 #import "Person.h"
 
 @implementation AppDelegate
@@ -42,7 +43,10 @@
         NSLog(@"Failed to create the new person");
     }
     
+    ViewController *viewController = [[UIViewController alloc] init];
     
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = navigationController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
