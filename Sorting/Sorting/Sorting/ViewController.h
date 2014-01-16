@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+- (IBAction)orderByAgeBtnPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *orderByHireDateBtnPressed;
+- (IBAction)orderByHireDateBtnPressed:(id)sender;
+- (IBAction)recreateButtonPressed:(id)sender;
 
 @end

@@ -13,4 +13,10 @@
 @property (strong, nonatomic) NSString *lastName;
 @property (strong, nonatomic) NSDate *dateOfHire;
 @property (strong, nonatomic) NSNumber *age;
+
+-(id)initWithFirstName:(NSString *)firstName
+              lastName:(NSString *)lastName
+            dateOfHire:(NSDate *)dateOfHire
+                   age:(NSNumber *)age;
+
 @end

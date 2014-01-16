@@ -23,6 +23,7 @@
 		1C12B24118885F79006BCF43 /* SortingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12B24018885F79006BCF43 /* SortingTests.m */; };
 		1C12B24B18885F8A006BCF43 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C12B24A18885F8A006BCF43 /* README.md */; };
 		1C12B24E18886226006BCF43 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12B24D18886226006BCF43 /* Employee.m */; };
+		1C12B2511888712E006BCF43 /* UIViewController+Algorithms.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C12B2501888712E006BCF43 /* UIViewController+Algorithms.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		1C12B24A18885F8A006BCF43 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1C12B24C18886226006BCF43 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		1C12B24D18886226006BCF43 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		1C12B24F1888712E006BCF43 /* UIViewController+Algorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Algorithms.h"; sourceTree = "<group>"; };
+		1C12B2501888712E006BCF43 /* UIViewController+Algorithms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Algorithms.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				1C12B22718885F79006BCF43 /* Main.storyboard */,
 				1C12B22A18885F79006BCF43 /* ViewController.h */,
 				1C12B22B18885F79006BCF43 /* ViewController.m */,
+				1C12B24F1888712E006BCF43 /* UIViewController+Algorithms.h */,
+				1C12B2501888712E006BCF43 /* UIViewController+Algorithms.m */,
 				1C12B24C18886226006BCF43 /* Employee.h */,
 				1C12B24D18886226006BCF43 /* Employee.m */,
 				1C12B22D18885F79006BCF43 /* Images.xcassets */,
@@ -260,6 +265,7 @@
 			files = (
 				1C12B22C18885F79006BCF43 /* ViewController.m in Sources */,
 				1C12B24E18886226006BCF43 /* Employee.m in Sources */,
+				1C12B2511888712E006BCF43 /* UIViewController+Algorithms.m in Sources */,
 				1C12B22618885F79006BCF43 /* AppDelegate.m in Sources */,
 				1C12B22218885F79006BCF43 /* main.m in Sources */,
 			);

@@ -9,5 +9,15 @@
 #import "Employee.h"
 
 @implementation Employee
-
+-(id)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName dateOfHire:(NSDate *)dateOfHire age:(NSNumber *)age
+{
+    if ((self = [super init]))
+    {
+        self.firstName = firstName;
+        self.lastName = lastName;
+        self.dateOfHire = dateOfHire;
+        self.age = age;
+    }
+    return self;
+}
 @end
