@@ -43,7 +43,7 @@
         NSLog(@"Failed to create the new person");
     }
     
-    ViewController *viewController = [[UIViewController alloc] init];
+    ViewController *viewController =  [[ViewController alloc] init];
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     self.window.rootViewController = navigationController;
@@ -176,5 +176,43 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
+#pragma mark - NSFetchRequest
+-(BOOL)createNewPersonWithFirstName:(NSString *)paramFirstName
+                           lastName:(NSString *)paramLastName
+                                age:(NSUInteger)paramAge
+{
+    BOOL result = NO;
+    
+    if ([paramFirstName length] == 0 || [paramLastName length] == 0)
+    {
+        NSLog(@"First and last names are mandatory.");
+        return NO;
+    }
+    
+    Person *newPerson = [NSEntityDescription insertNewObjectForEntityForName:@"Person"
+                                                      inManagedObjectContext:self.managedObjectContext];
+    
+    if (newPerson == nil)
+    {
+        NSLog(@"Failed to create the new person.");
+        return NO;
+    }
+    
+    newPerson.firstName = paramFirstName;
+    newPerson.lastName = paramLastName;
+    
+    NSError *savingError = nil;
+    
+    if ([self.managedObjectContext save:&savingError])
+    {
+        return YES;
+    } else {
+        NSLog(@"failed to create the new person. Error = %@", savingError);
+    }
+    
+    return result;
+}
+
 
 @end
