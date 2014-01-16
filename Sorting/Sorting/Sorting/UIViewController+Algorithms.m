@@ -37,6 +37,14 @@
  Slightly faster than a bubble sort
  Looks at progressively smaller parts of the array each time
 
+ Selects the smallest (or largest if you want to sort from big to small) elements of the array and
+ placing it at the head of the array. Then the process is repeated for the remainder of the array
+ the next largest element is selected and put in the next slot and so on down the line
+ 
+ Because the selection sort looks at progressively smaller parts of the array each time
+ (as it knows to ignore the front of the array because it is already in order) a selection
+ sort is slightly faster than a bubble sort, and can be better than a modified bubble sort
+ 
  */
 -(NSArray *)basicSelectionSort:(NSArray *)submittedArray
 {
@@ -53,6 +61,7 @@
                 index_of_min = y;
             }
         }
+        
         
         id temp = workingArray[x];
         

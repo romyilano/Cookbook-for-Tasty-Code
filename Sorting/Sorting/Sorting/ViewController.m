@@ -85,28 +85,20 @@
     
     NSArray *sortedArray = [self.employees sortedArrayUsingDescriptors:sortDescriptors];
     self.employees = sortedArray;
-    
-    for (int i=0; i < self.employees.count; i++)
-    {
-        Employee *thisEmployee = self.employees[i];
-        NSLog(@"Employee: %@ age: %@ hire date: %@", thisEmployee.firstName, thisEmployee.age, thisEmployee.dateOfHire );
-        
-    }
+  
+    [self logEmployees];
     
 }
 - (IBAction)orderByHireDateBtnPressed:(id)sender {
     
-    NSSortDescriptor *hireDateDescriptor = [[NSSortDescriptor alloc] initWithKey:@"hireDate" ascending:YES];
+    
+    NSSortDescriptor *hireDateDescriptor = [[NSSortDescriptor alloc] initWithKey:@"dateOfHire" ascending:YES];
     NSArray *sortDescriptors = @[hireDateDescriptor];
     NSArray *sortedArrayByHireDate = [self.employees sortedArrayUsingDescriptors:sortDescriptors];
     
     self.employees = sortedArrayByHireDate;
     
-    for (int i =0; self.employees.count; i++)
-    {
-        Employee *thisEmployee = self.employees[i];
-        NSLog(@"Employee: %@ age: %@ hire date: %@", thisEmployee.firstName, thisEmployee.age, thisEmployee.dateOfHire );
-    }
+    [self logEmployees];
 }
 
 - (IBAction)recreateButtonPressed:(id)sender {
@@ -120,6 +112,7 @@
 
 -(void)logEmployees
 {
+    NSLog(@"=============");
     
     for (int i =0; i < self.employees.count; i++)
     {
