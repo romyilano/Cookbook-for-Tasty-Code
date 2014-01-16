@@ -25,6 +25,7 @@
 		1CF358B8188755C90056E6AC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF358B7188755C90056E6AC /* Person.m */; };
 		1CF358BC188757310056E6AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF358BA188757310056E6AC /* ViewController.m */; };
 		1CF358BD188757310056E6AC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF358BB188757310056E6AC /* ViewController.xib */; };
+		1CF3590018875F4D0056E6AC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1CF358FF18875F4D0056E6AC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		1CF358B9188757310056E6AC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1CF358BA188757310056E6AC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1CF358BB188757310056E6AC /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		1CF358FF18875F4D0056E6AC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		1CF35875188750A40056E6AC = {
 			isa = PBXGroup;
 			children = (
+				1CF358FF18875F4D0056E6AC /* README.md */,
 				1CF35889188750A40056E6AC /* Basic Core Data */,
 				1CF358A6188750A40056E6AC /* Basic Core DataTests */,
 				1CF35880188750A40056E6AC /* Frameworks */,
@@ -243,6 +246,7 @@
 			files = (
 				1CF3588E188750A40056E6AC /* InfoPlist.strings in Resources */,
 				1CF358BD188757310056E6AC /* ViewController.xib in Resources */,
+				1CF3590018875F4D0056E6AC /* README.md in Resources */,
 				1CF35899188750A40056E6AC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +471,7 @@
 				1CF358B2188750A40056E6AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CF358B3188750A40056E6AC /* Build configuration list for PBXNativeTarget "Basic Core DataTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +480,7 @@
 				1CF358B5188750A40056E6AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
