@@ -13,5 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *orderByHireDateBtnPressed;
 - (IBAction)orderByHireDateBtnPressed:(id)sender;
 - (IBAction)recreateButtonPressed:(id)sender;
+- (IBAction)sortByFirstName:(id)sender;
+- (IBAction)sortByAll:(id)sender;
 
 @end

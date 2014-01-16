@@ -48,8 +48,8 @@
                                                    dateOfHire:[NSDate date] age:[NSNumber numberWithInt:34]];
     
     [workingEmployeeList addObject:employee1];
-    
-    Employee *employee2 = [[Employee alloc] initWithFirstName:@"Jane"
+
+    Employee *employee2 = [[Employee alloc] initWithFirstName:@"Yan"
                                                      lastName:@"Smith"
                                                    dateOfHire:[dFormat dateFromString:@"2013-08-06T03:51:54+00:00"]
                                                           age:[NSNumber numberWithInt:44]];
@@ -108,6 +108,31 @@
     
     [self logEmployees];
     
+}
+
+- (IBAction)sortByFirstName:(id)sender {
+    
+    NSSortDescriptor *firstNameDescriptor = [[NSSortDescriptor alloc] initWithKey:@"firstName" ascending:YES selector:@selector(localizedStandardCompare:)];
+    NSArray *sortDescriptors = @[firstNameDescriptor];
+    NSArray *sortedArray = [self.employees sortedArrayUsingDescriptors:sortDescriptors];
+    self.employees = sortedArray;
+    
+    [self logEmployees];
+}
+
+- (IBAction)sortByAll:(id)sender {
+    
+    NSSortDescriptor *lastNameDescriptor = [[NSSortDescriptor alloc] initWithKey:@"lastName" ascending:YES selector:@selector(localizedStandardCompare:)];
+    NSSortDescriptor *firstNameDescriptor = [[NSSortDescriptor alloc] initWithKey:@"firstName" ascending:YES selector:@selector(localizedStandardCompare:)];
+    NSSortDescriptor *dateHire = [[NSSortDescriptor alloc] initWithKey:@"dateOfHire" ascending:YES];
+    NSSortDescriptor *age = [[NSSortDescriptor alloc] initWithKey:@"age" ascending:YES];
+    
+    NSArray *sortDescriptors = @[dateHire, age, lastNameDescriptor, firstNameDescriptor];
+    
+    NSArray *sortedArray = [self.employees sortedArrayUsingDescriptors:sortDescriptors];
+    self.employees = sortedArray;
+    
+    [self logEmployees];
 }
 
 -(void)logEmployees
