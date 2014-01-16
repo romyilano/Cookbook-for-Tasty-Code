@@ -21,27 +21,50 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    Person *newPerson = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:self.managedObjectContext];
+    [self createNewPersonWithFirstName:@"John"
+                              lastName:@"Robbins"
+                                   age:52];
     
-    if (newPerson != nil)
+    [self createNewPersonWithFirstName:@"Richard"
+                              lastName:@"Song"
+                                   age:32];
+    
+    // create the fetch request first
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    // here's the entity whose contents we want to read
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Person"
+                                              inManagedObjectContext:self.managedObjectContext];
+    
+    // tell the request that we want to read the contents of the Person entity
+    [fetchRequest setEntity:entity];
+    
+    NSError *requestError = nil;
+    
+    // and execute the fetch request on the context
+    NSArray *persons = [self.managedObjectContext executeFetchRequest:fetchRequest
+                                                                error:&requestError];
+    
+    // make sure we get an array
+    if ([persons count] > 0)
     {
-        newPerson.firstName = @"Anthony";
-        newPerson.lastName = @"Robbins";
-        newPerson.age = [NSNumber numberWithUnsignedInteger:51];
+        // go through the persons array one by one
+        NSUInteger counter = 1;
         
-        NSError *savingError = nil;
-        
-        if ([self.managedObjectContext save:&savingError])
+        for (Person *thisPerson in persons)
         {
-            NSLog(@"Successfully saved context.");
-        } else
-        {
-            NSLog(@"Failed to save the context. Error = %@", savingError);
+            NSLog(@"Person %lu First Name = %@", (unsigned long)counter, thisPerson.firstName);
+            
+            NSLog(@"Person %lu Last name = %2", (unsigned long)counter, thisPerson.lastName);
+            
+            NSLog(@"Person %lu Age = %ld", (unsigned long) counter, (unsigned long)[thisPerson.age unsignedIntegerValue]);
+            
+            counter++;
         }
-    } else
-    {
-        NSLog(@"Failed to create the new person");
+    } else {
+        NSLog(@"Could not find any Person entities in the context");
     }
+    
     
     ViewController *viewController =  [[ViewController alloc] init];
     
