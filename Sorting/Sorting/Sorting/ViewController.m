@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 @property (strong, nonatomic) NSArray *employees;
+@property (strong ,nonatomic) NSArray *arrayOfNumbers;
 @end
 
 @implementation ViewController
@@ -34,6 +35,29 @@
 }
 
 #pragma mark - Custom Method
+
+-(void)loadNumbers
+{
+    self.arrayOfNumbers = @[@5, @0, @25, @3, @44, @100, @55, @6, @7, @8];
+    
+    /*
+     
+     
+     NSArray *sortedArray = [array sortedArrayUsingComparator: ^(id obj1, id obj2) {
+     
+     if ([obj1 integerValue] > [obj2 integerValue]) {
+     return (NSComparisonResult)NSOrderedDescending;
+     }
+     
+     if ([obj1 integerValue] < [obj2 integerValue]) {
+     return (NSComparisonResult)NSOrderedAscending;
+     }
+     return (NSComparisonResult)NSOrderedSame;
+     }];
+     
+     */
+}
+
 // create initial array of employees
 -(void)loadEmployees
 {

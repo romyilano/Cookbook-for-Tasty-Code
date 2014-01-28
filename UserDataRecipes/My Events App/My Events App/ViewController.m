@@ -38,9 +38,11 @@
                                                                        toDate:now
                                                                       options:0];
             
+            
             // Use the predicate to retrieve the actual events from the event store
             NSPredicate *allEventsWithin48HoursPredicate = [self.eventStore predicateForEventsWithStartDate:now endDate:fortyEightHoursFromNow calendars:nil];
             
+           
             NSArray *events = [self.eventStore eventsMatchingPredicate:allEventsWithin48HoursPredicate];
             
             for (EKEvent *event in events)
