@@ -41,7 +41,68 @@
 {
     [self.activityIndicator startAnimating];
     
-    // to-do - create and add reminder
+    // create and add reminder
+    
+    // Create the reminder
+    EKReminder *newReminder = [EKReminder reminderWithEventStore:self.eventStore];
+    newReminder.title = @"Cara beth Burnside is skating";
+    newReminder.calendar = [self.eventStore defaultCalendarForNewReminders];
+    
+    // calculate the date exactly one day from now
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *oneDayComponents = [[NSDateComponents alloc] init];
+    oneDayComponents.day = 1;
+    NSDate *nextDay = [calendar dateByAddingComponents:oneDayComponents
+                                                toDate:[NSDate date] options:0];
+    
+    // set the specific time for 6PM - extract the NSDateComponents object
+    //  from nextDay, change its hour component to 18 (6pm on a 24 hour clock) and create a new date
+    //  from these adjusted components
+    NSUInteger unitFlags = NSEraCalendarUnit | NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+    NSDateComponents *tomorrowAt6PMComponents = [calendar components:unitFlags fromDate:nextDay];
+    tomorrowAt6PMComponents.hour = 18;
+    tomorrowAt6PMComponents.minute = 0;
+    tomorrowAt6PMComponents.second = 0;
+    NSDate *nextDayAt6PM = [calendar dateFromComponents:tomorrowAt6PMComponents];
+    
+    // create an EKAlaram with the time and add it to the reminder
+    EKAlarm *alarm = [EKAlarm alarmWithAbsoluteDate:nextDayAt6PM];
+    [newReminder addAlarm:alarm];
+    newReminder.dueDateComponents = tomorrowAt6PMComponents;
+    
+    // save reminder
+    NSString *alertTitle = [[NSString alloc] init];
+    NSString *alertMessage = [[NSString alloc] init];
+    NSString *alertButtonTitle = [[NSString alloc] init];
+    NSError *error = nil;
+    
+    [self.eventStore saveReminder:newReminder
+                           commit:YES error:&error];
+    
+    if (error == nil)
+    {
+        alertTitle = @"Information";
+        alertMessage = [NSString stringWithFormat:@"\"%@\" was added to Reminders", newReminder.title];
+        alertButtonTitle = @"OK";
+    }
+    else
+    {
+        alertTitle = @"Error";
+        alertMessage = [NSString stringWithFormat:@"Unable to save reminder: %@", error];
+        alertButtonTitle = @"Dismiss";
+    }
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:alertTitle
+                                                            message:alertMessage
+                                                           delegate:nil
+                                                  cancelButtonTitle:alertButtonTitle
+                                                  otherButtonTitles: nil];
+        [alertView show];
+        [self.activityIndicator stopAnimating];
+    });
+    
+    
     
     // grabbing the main thread
     dispatch_async(dispatch_get_main_queue(), ^{
