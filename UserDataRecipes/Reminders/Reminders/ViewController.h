@@ -16,6 +16,6 @@
 @property (strong, nonatomic) EKEventStore *eventStore;
 
 -(IBAction)addTimeBasedReminder:(id)sender;
--(IBAction)addLocationBasedRemidner:(id)sender;
+-(IBAction)addLocationBasedReminder:(id)sender;
 
 @end

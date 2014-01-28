@@ -26,4 +26,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (EKEventStore *)eventStore
+{
+    if (_eventStore == nil)
+    {
+        _eventStore = [[EKEventStore alloc] init];
+    }
+    
+    return _eventStore;
+}
+
+#pragma mark - Action Methods
+-(IBAction)addTimeBasedReminder:(id)sender
+{
+    
+}
+
+-(IBAction)addLocationBasedReminder:(id)sender
+{
+    
+}
 @end
