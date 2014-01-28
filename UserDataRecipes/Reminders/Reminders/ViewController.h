@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <EventKit/EventKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CLLocationManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (strong, nonatomic) EKEventStore *eventStore;
+
+-(IBAction)addTimeBasedReminder:(id)sender;
+-(IBAction)addLocationBasedRemidner:(id)sender;
 
 @end
