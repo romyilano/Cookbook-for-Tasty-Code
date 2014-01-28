@@ -26,6 +26,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return NO;
+}
+
+# pragma mark
+
+#pragma mark - Action methods
+
 - (IBAction)convertToHebrew:(id)sender {
 }
 
