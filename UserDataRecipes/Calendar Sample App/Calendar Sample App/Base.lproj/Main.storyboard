@@ -58,6 +58,9 @@
                                 <state key="normal" title="To Hebrew >>">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="convertToHebrew:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="exO-4d-Eit"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taS-7G-m09">
                                 <rect key="frame" x="197" y="227" width="111" height="30"/>
@@ -65,6 +68,9 @@
                                 <state key="normal" title="&lt;&lt; To Gregorian">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="convertToGregorian:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gcs-r6-AGW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Month" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3c-Ey-2UL">
                                 <rect key="frame" x="20" y="97" width="50" height="21"/>
@@ -104,6 +110,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="gDayTextField" destination="B8Y-5I-Lih" id="4xT-BA-ExT"/>
+                        <outlet property="gMonthTextField" destination="jal-lI-kKP" id="WqT-bD-7hA"/>
+                        <outlet property="gYearTextField" destination="Ops-QO-xcd" id="YSg-bP-EOC"/>
+                        <outlet property="hDayTextField" destination="CkC-NF-p9q" id="Uer-Ov-VB4"/>
+                        <outlet property="hMonthTextField" destination="xTg-cQ-Hbb" id="q1y-YS-SGU"/>
+                        <outlet property="hYearTextField" destination="lx6-br-eS3" id="qjE-7I-9wy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
