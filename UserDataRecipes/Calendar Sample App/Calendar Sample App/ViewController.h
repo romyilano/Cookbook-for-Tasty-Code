@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
 
+@property (nonatomic, strong) NSCalendar *gregorianCalendar;
+@property (nonatomic, strong) NSCalendar *hebrewCalendar;
+
 @property (weak, nonatomic) IBOutlet UITextField *gMonthTextField;
 @property (weak, nonatomic) IBOutlet UITextField *gDayTextField;
 @property (weak, nonatomic) IBOutlet UITextField *gYearTextField;

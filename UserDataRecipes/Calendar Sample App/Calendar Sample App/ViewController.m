@@ -32,7 +32,27 @@
     return NO;
 }
 
-# pragma mark
+# pragma mark - Setters & Getters (accessor methods)
+
+// lazy initialization
+-(NSCalendar *)gregorianCalendar
+{
+    if (!_gregorianCalendar)
+    {
+        _gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    }
+    return _gregorianCalendar;
+}
+
+// lazy initialization
+-(NSCalendar *)hebrewCalendar
+{
+    if (!_hebrewCalendar)
+    {
+        _hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    }
+    return _hebrewCalendar;
+}
 
 #pragma mark - Action methods
 
