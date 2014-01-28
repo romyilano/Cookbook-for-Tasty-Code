@@ -39,6 +39,15 @@
 #pragma mark - Action Methods
 -(IBAction)addTimeBasedReminder:(id)sender
 {
+    [self.activityIndicator startAnimating];
+    
+    // to-do - create and add reminder
+    
+    // grabbing the main thread
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // to-do notify the user if the reminder was successfully added or not
+        [self.activityIndicator stopAnimating];
+    });
     
 }
 
@@ -46,4 +55,31 @@
 {
     
 }
+
+#pragma mark - Custom Method
+-(void)handleReminderAction:(RestrictedEventStoreActionHandler)block
+{
+        [self.eventStore requestAccessToEntityType:EKEntityTypeReminder
+                                        completion:^(BOOL granted, NSError *error) {
+                                            
+                                            if (granted)
+                                            {
+                                                block();
+                                            }
+                                            else
+                                            {
+                                                UIAlertView *notGrantedAlert = [[UIAlertView alloc] initWithTitle:@"Access Denied"
+                                                                                                          message:@"Access to device's reminders has been denied for this app"
+                                                                                                         delegate:nil
+                                                                                                cancelButtonTitle:@"OK'" otherButtonTitles: nil];
+                                                
+                                                // throws the alert back to the main thread since it's
+                                                //  UI
+                                                dispatch_async(dispatch_get_main_queue(), ^{
+                                                    [notGrantedAlert show];
+                                                });
+                                            }
+                                        }];
+}
+
 @end
