@@ -26,4 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)saveContent:(id)sender {
+}
+
+- (IBAction)loadContent:(id)sender {
+}
+
+- (IBAction)clearContent:(id)sender {
+}
 @end

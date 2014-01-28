@@ -10,4 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *filenameTextField;
+@property (weak, nonatomic) IBOutlet UITextView *contentTextView;
+- (IBAction)saveContent:(id)sender;
+- (IBAction)loadContent:(id)sender;
+- (IBAction)clearContent:(id)sender;
 @end
