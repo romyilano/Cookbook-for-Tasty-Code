@@ -22,6 +22,9 @@
 		1C0006041898398B00782AFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C0006021898398B00782AFA /* InfoPlist.strings */; };
 		1C0006061898398B00782AFA /* RemindersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0006051898398B00782AFA /* RemindersTests.m */; };
 		1C000610189839A400782AFA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C00060F189839A400782AFA /* README.md */; };
+		1C00061218983A1900782AFA /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C00061118983A1900782AFA /* EventKit.framework */; };
+		1C00061418983A1D00782AFA /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C00061318983A1D00782AFA /* EventKitUI.framework */; };
+		1C00061618983A2200782AFA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C00061518983A2200782AFA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		1C0006031898398B00782AFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1C0006051898398B00782AFA /* RemindersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemindersTests.m; sourceTree = "<group>"; };
 		1C00060F189839A400782AFA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1C00061118983A1900782AFA /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		1C00061318983A1D00782AFA /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		1C00061518983A2200782AFA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C00061618983A2200782AFA /* CoreLocation.framework in Frameworks */,
+				1C00061418983A1D00782AFA /* EventKitUI.framework in Frameworks */,
+				1C00061218983A1900782AFA /* EventKit.framework in Frameworks */,
 				1C0005DD1898398A00782AFA /* CoreGraphics.framework in Frameworks */,
 				1C0005DF1898398A00782AFA /* UIKit.framework in Frameworks */,
 				1C0005DB1898398A00782AFA /* Foundation.framework in Frameworks */,
@@ -104,6 +113,9 @@
 		1C0005D91898398A00782AFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1C00061518983A2200782AFA /* CoreLocation.framework */,
+				1C00061318983A1D00782AFA /* EventKitUI.framework */,
+				1C00061118983A1900782AFA /* EventKit.framework */,
 				1C0005DA1898398A00782AFA /* Foundation.framework */,
 				1C0005DC1898398A00782AFA /* CoreGraphics.framework */,
 				1C0005DE1898398A00782AFA /* UIKit.framework */,
