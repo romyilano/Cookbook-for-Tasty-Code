@@ -57,6 +57,24 @@
 #pragma mark - Action methods
 
 - (IBAction)convertToHebrew:(id)sender {
+    
+    NSDateComponents *gComponents = [[NSDateComponents alloc] init];
+    [gComponents setDay:[self.gDayTextField.text integerValue]];
+    [gComponents setMonth:[self.gMonthTextField.text integerValue]];
+    [gComponents setYear:[self.gYearTextField.text integerValue]];
+    
+    NSDate *gregorianDate = [self.gregorianCalendar dateFromComponents:gComponents];
+    
+    NSUInteger unitFlags = NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit;
+    
+    NSDateComponents *hebrewDateComponents = [self.hebrewCalendar components:unitFlags fromDate:gregorianDate];
+    
+    self.hDayTextField.text = [[NSNumber numberWithInteger:hebrewDateComponents.day] stringValue];
+    self.hMonthTextField.text = [[NSNumber numberWithInteger:hebrewDateComponents.month] stringValue];
+    self.hYearTextField.text = [[NSNumber numberWithInteger:hebrewDateComponents.year] stringValue];
+    
+    
+    
 }
 
 - (IBAction)convertToGregorian:(id)sender {
