@@ -41,8 +41,29 @@
 - (IBAction)saveContent:(id)sender {
     
     NSString *filePath = [self currentContentFilePath];
-    NSString *content = self.contentTextView.text;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
     
+    if ([fileManager fileExistsAtPath:filePath])
+    {
+        UIAlertView *overwriteAlert = [[UIAlertView alloc] initWithTitle:@"File Exists"
+                                                                 message:@"Do you want to replace the file?"
+                                                                delegate:self
+                                                       cancelButtonTitle:@"No"
+                                                       otherButtonTitles:@"Yes", nil];
+        
+        [overwriteAlert show];
+    }
+    
+    else
+    {
+        [self saveContentToFile:filePath];
+    }
+    
+}
+
+-(void)saveContentToFile:(NSString *)filePath
+{
+    NSString *content = self.contentTextView.text;
     NSError *error = nil;
     
     BOOL success = [content writeToFile:filePath
@@ -78,4 +99,16 @@
     self.contentTextView.text = nil;
     
 }
+
+#pragma mark - UIAlertViewDelegate Methods
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1)
+    {
+        // user tapped Yes Button, overwrite the file
+        NSString *filePath = [self currentContentFilePath];
+        [self saveContentToFile:filePath];
+    }
+}
+
 @end
