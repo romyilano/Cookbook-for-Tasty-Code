@@ -22,6 +22,8 @@
 		1C6776021898BB490037DAF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C6776001898BB490037DAF8 /* InfoPlist.strings */; };
 		1C6776041898BB490037DAF8 /* Hello_OpenGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6776031898BB490037DAF8 /* Hello_OpenGLTests.m */; };
 		1C67760E1898BB590037DAF8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C67760D1898BB590037DAF8 /* README.md */; };
+		1C6776101898BB8A0037DAF8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C67760F1898BB8A0037DAF8 /* OpenGLES.framework */; };
+		1C6776121898BB8F0037DAF8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6776111898BB8F0037DAF8 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		1C6776011898BB490037DAF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1C6776031898BB490037DAF8 /* Hello_OpenGLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hello_OpenGLTests.m; sourceTree = "<group>"; };
 		1C67760D1898BB590037DAF8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1C67760F1898BB8A0037DAF8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1C6776111898BB8F0037DAF8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C6776121898BB8F0037DAF8 /* QuartzCore.framework in Frameworks */,
+				1C6776101898BB8A0037DAF8 /* OpenGLES.framework in Frameworks */,
 				1C6775DB1898BB490037DAF8 /* CoreGraphics.framework in Frameworks */,
 				1C6775DD1898BB490037DAF8 /* UIKit.framework in Frameworks */,
 				1C6775D91898BB490037DAF8 /* Foundation.framework in Frameworks */,
@@ -103,6 +109,8 @@
 		1C6775D71898BB490037DAF8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1C6776111898BB8F0037DAF8 /* QuartzCore.framework */,
+				1C67760F1898BB8A0037DAF8 /* OpenGLES.framework */,
 				1C6775D81898BB490037DAF8 /* Foundation.framework */,
 				1C6775DA1898BB490037DAF8 /* CoreGraphics.framework */,
 				1C6775DC1898BB490037DAF8 /* UIKit.framework */,
