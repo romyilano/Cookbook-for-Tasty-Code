@@ -24,6 +24,7 @@
 		1C67760E1898BB590037DAF8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C67760D1898BB590037DAF8 /* README.md */; };
 		1C6776101898BB8A0037DAF8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C67760F1898BB8A0037DAF8 /* OpenGLES.framework */; };
 		1C6776121898BB8F0037DAF8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6776111898BB8F0037DAF8 /* QuartzCore.framework */; };
+		1C6776151898BD250037DAF8 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6776141898BD250037DAF8 /* OpenGLView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		1C67760D1898BB590037DAF8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1C67760F1898BB8A0037DAF8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		1C6776111898BB8F0037DAF8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1C6776131898BD250037DAF8 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		1C6776141898BD250037DAF8 /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				1C6775E71898BB490037DAF8 /* AppDelegate.h */,
 				1C6775E81898BB490037DAF8 /* AppDelegate.m */,
 				1C6775EA1898BB490037DAF8 /* Main.storyboard */,
+				1C6776131898BD250037DAF8 /* OpenGLView.h */,
+				1C6776141898BD250037DAF8 /* OpenGLView.m */,
 				1C6775ED1898BB490037DAF8 /* ViewController.h */,
 				1C6775EE1898BB490037DAF8 /* ViewController.m */,
 				1C6775F01898BB490037DAF8 /* Images.xcassets */,
@@ -264,6 +269,7 @@
 				1C6775EF1898BB490037DAF8 /* ViewController.m in Sources */,
 				1C6775E91898BB490037DAF8 /* AppDelegate.m in Sources */,
 				1C6775E51898BB490037DAF8 /* main.m in Sources */,
+				1C6776151898BD250037DAF8 /* OpenGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
