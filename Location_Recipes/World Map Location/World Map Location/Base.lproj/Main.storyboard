@@ -28,10 +28,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2N-c6-ZJ7">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="mapToolbar" destination="e2N-c6-ZJ7" id="q6e-72-CkQ"/>
                         <outlet property="mapView" destination="61c-Hn-A5k" id="aS8-CV-KKq"/>
                         <outlet property="userLocationLabel" destination="mAS-sU-5wW" id="Z4d-ad-pMR"/>
                     </connections>

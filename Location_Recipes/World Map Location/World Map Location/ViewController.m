@@ -43,6 +43,11 @@
          use the property userLocationVisible
          */
     }
+    
+    // add button fo rcontrolling user location tracking
+    MKUserTrackingBarButtonItem *trackingButton = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
+    [self.mapToolbar setItems:[NSArray arrayWithObject:trackingButton] animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning

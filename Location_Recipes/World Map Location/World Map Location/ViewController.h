@@ -13,5 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UILabel *userLocationLabel;
+@property (weak, nonatomic) IBOutlet UIToolbar *mapToolbar;
 
 @end
